@@ -41,7 +41,7 @@ rm techreport.paper.make techreport.embed.make
 [~/github/radgrad/techreport]->
 ```
 
-Now you should be able to view the techreport.pdf file.  This document contains further information about how to design and implement your techreport. It also includes examples of the most common LaTex formatting commands---make words italicized, enumerated lists, figures, tables, sections, citations, etc.
+Now you should be able to view the techreport.pdf file.  This document contains further information about how to design and implement your techreport. It also includes examples of the most common LaTex formatting commands---make words italicized, enumerated lists, figures, tables, sections, citations, etc. Don't worry about writing over this file, you can always refer to the original source file [here](https://raw.githubusercontent.com/radgrad/techreport/master/techreport.tex).
 
 To actually make your techreport, I recommend that you make an IntelliJ project for this repo, then edit the text there. I generally do not install the tex extensions for IntelliJ, but you can try them if you want.
 

@@ -8,7 +8,7 @@ Next, install [TexLive](https://www.tug.org/texlive/).
 
 Finally, clone this repo to your laptop, cd into the repo directory, and type "make" to ensure that everything is installed correctly and that you can create a copy of the template pdf file. For example:
 
-'''
+```
 [~/github/radgrad/techreport]-> make
 = techreport.tex --> techreport.d techreport.dvi (1) =
 Files techreport.toc and techreport.toc.make differ
@@ -39,10 +39,10 @@ Success!  Wrote 4 pages, 17248 bytes
 = techreport.ps --> techreport.pdf =
 rm techreport.paper.make techreport.embed.make
 [~/github/radgrad/techreport]->
-'''
+```
 
 Now you should be able to view the techreport.pdf file.
 
 To actually make your techreport, I recommend that you make an IntelliJ project for this repo, then edit the text there.
 
-Note that the PDF file is not committed to the repo.  This makes it easier for multiple people to collaborate on a single project without getting merge errors. 
+Note that the PDF file is not committed to the repo.  This makes it easier for multiple people to collaborate on a single project without getting merge errors.

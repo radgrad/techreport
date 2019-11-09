@@ -4,7 +4,7 @@ This repo contains a template for building technical reports using LaTeX.
 
 To use this template, first click the green "Use this template" button at the top of this page to create a copy of this repo in your own GitHub account.   You might want to rename this repo from "techreport" to a name indicating the project, such as "diversity-in-cs-proposal".
 
-Next, install [TexLive](https://www.tug.org/texlive/).
+Next, install [TexLive](https://www.tug.org/texlive/). If you are on a Mac, install [MacTex](https://www.tug.org/mactex/).
 
 Finally, clone this repo to your laptop, cd into the repo directory, and type "make" to ensure that everything is installed correctly and that you can create a copy of the template pdf file. For example:
 
@@ -43,6 +43,6 @@ rm techreport.paper.make techreport.embed.make
 
 Now you should be able to view the techreport.pdf file.
 
-To actually make your techreport, I recommend that you make an IntelliJ project for this repo, then edit the text there.
+To actually make your techreport, I recommend that you make an IntelliJ project for this repo, then edit the text there. I generally do not install the tex extensions for IntelliJ, but you can try them if you want.
 
 Note that the PDF file is not committed to the repo.  This makes it easier for multiple people to collaborate on a single project without getting merge errors.

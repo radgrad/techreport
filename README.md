@@ -58,6 +58,8 @@ Since make files don't work by default on Windows, you need to invoke the follow
 
 The first invocation of pdflatex creates a number of intermediate files providing information about the structure of the document which are then used by a second invocation of pdflatex to generate the table of contents. There is a separate program, bibtex, which is used to generate the bibliography section.  So, in all, you need to run these three commands to generate the document from scratch. (If the bibliography hasn't changed, then you don't have to run bibtex each time.)
 
+For more information, you can see the [Testing the installation section of TexLive](https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#x1-380003.5).
+
 ### Developing your tech report
 
 There are only two files you need to edit from this template to create your tech report:
@@ -72,3 +74,7 @@ To actually make your techreport, I recommend that you make an IntelliJ project 
 Whatever editor you use, be sure it provides a spelling checker!
 
 Note that the PDF file is not committed to the repo.  This makes it easier for multiple people to collaborate on a single project without getting merge errors.
+
+### Avoid the GUIs
+
+There are a number of GUI and cloud-based tools.  Please avoid them for now and just use a regular editor and the command line.  For the simple documents you are creating, I believe this template and the command line will get you to the finished report the fastest, and allow others to help you author the document and debug issues the easiest.

@@ -1,15 +1,8 @@
 \documentclass[english]{proposalnsf}
-\usepackage[final]{graphicx}
+\usepackage{graphicx}
 \usepackage{url}
-\usepackage[]{hyperref}
-\usepackage{breakurl}
-\urlstyle{same}
-\usepackage[rflt]{floatflt}
-\usepackage{wrapfig}
-\usepackage{enumitem}
 \usepackage[square,numbers]{natbib}
 \usepackage[nottoc,numbib]{tocbibind}
-
 
 \title{My Awesome TechReport}
 \author{Philip Johnson \\Collaborative Software Development Laboratory \\ Information and Computer Sciences \\ University of Hawaii}
@@ -51,6 +44,32 @@ You want this section to be as detailed as you can possibly make it.  The more d
 
 Sometimes you might do a {\em pilot study} or {\em spike solution}.  This is a quick and dirty implementation that helps you understand the nature of the problem you are trying to solve.  For example, you might interview a single person, or you might make a mockup implementation or analysis with fake data.  That's fine: include the results of this section.
 
+Quite often, you will want to add a picture to your tech report. The trick for including figures into LaTeX is to first convert them to encapsulated postscript (.eps) format. I use the convert program, but for Windows, you might ned pdftoops or ghostscript.  Google for lots of ideas on how to do this. All figures in your tech report must be referenced. So for example, Figure \ref{fig:theory} presents a theory of change for the RadGrad project.
+
+\begin{figure}[t]
+  \includegraphics[width=\textwidth]{theory-of-change.eps}
+  \caption{Theory of change}
+  \label{fig:theory}
+\end{figure}
+
+You might also want to include a table.  Figure \ref{fig:hardware-table} shows an example table.
+
+\begin{figure}[ht]
+  \begin{tabular}{l|r|p{2in}|p{1in}|p{1in}} \hline
+  {\bf Device} & {\bf Cost} & {\bf Measurements} & {\bf Synchronization} & {\bf Communication} \\ \hline
+  PMU & \$100,000 & frequency, voltage, current & GPS & Secure LAN  \\
+  FDR & \$2,500 & frequency, voltage & GPS & Internet \\
+  PQube & \$5,000+ & frequency, voltage, THD, VARs & (none) & (none)  \\
+  mPMU & \$5,000+ & frequency, voltage, THD, VARs & GPS & Custom network \\
+  AC Scout & \$200+  & frequency, voltage & (none) & (none) \\
+  OPQ & \$60 & frequency, voltage, THD & NTP & HTTP/SSE \\
+  \hline
+  \end{tabular}
+  \caption{Comparison of hardware devices for power quality monitoring}
+  \label{fig:hardware-table}
+\end{figure}
+
+
 \section{Results}
 \label{results}
 
@@ -64,8 +83,13 @@ This is the fun section. Here you get to discuss how the data you collected abou
 Even more fun, this section allows you to provide opinions to future generations of researchers in this area. If you were going to continue on, what research question would you pursue next?  If you were going to repeat this project, what would you change about its design, now that you know what you know?
 
 
-\newpage
 \bibliography{techreport}
 \bibliographystyle{plainnat}
+
+\appendix
+\section{Formatting tips}
+
+One of the most common mistakes by newcomers to LaTeX is forgetting to escape the percent and dollar sign characters. The percent character (\%) comments out the rest of the current line, while the dollar sign character (\$) puts LaTeX into math mode, which is often not what you want. Put a backslash before them to get these characters to print normally.
+
 \end{document}
 

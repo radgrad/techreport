@@ -77,4 +77,4 @@ Note that the PDF file is not committed to the repo.  This makes it easier for m
 
 ### Avoid the GUIs
 
-There are a number of GUI and cloud-based tools.  Please avoid them for now and just use a regular editor and the command line.  For the simple documents you are creating, I believe this template and the command line will get you to the finished report the fastest, and allow others to help you author the document and debug issues the easiest.
+There are a number of GUI and cloud-based tools for TeX and LaTeX that you will find via Google. You might be tempted to think these will make your life easier. Please avoid them for now and just use a regular editor and the command line.  For the simple documents you are creating, I believe this template and the command line will get you to the finished report the fastest, and allow others to help you author the document and debug issues the easiest.

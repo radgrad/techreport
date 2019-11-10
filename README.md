@@ -46,7 +46,7 @@ Success!  Wrote 4 pages, 17248 bytes
 rm techreport.paper.make techreport.embed.make
 [~/github/radgrad/techreport]->
 ```
-### Building the techreport.pdf file (Windows)
+### Building your first PDF (Windows)
 
 Since make files don't work by default on Windows, you need to invoke the following LaTeX programs manually:
 
@@ -56,7 +56,7 @@ Since make files don't work by default on Windows, you need to invoke the follow
 > pdflatex techreport.tex
 ```
 
-The first invocation of pdflatex creates a number of intermediate files providing information about the structure of the document which are then used by a second invocation of pdflatex to generate the table of contents. There is a separate program, bibtex, which is used to generate the bibliography section.  So, in all, you need to run these three commands to generate the document from scratch. (If the bibliography hasn't changed, then you don't have to run bibtex each time.)
+The first invocation of pdflatex creates a number of intermediate files providing information about the structure of the document which are then used by a second invocation of pdflatex to generate the table of contents. There is a separate program, bibtex, which is used to generate the bibliography section.  So, in all, you need to run these three commands in sequence to generate the document from scratch. (If the bibliography hasn't changed, then you don't have to run bibtex each time.)
 
 For more information, you can see the [Testing the installation section of TexLive](https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#x1-380003.5).
 

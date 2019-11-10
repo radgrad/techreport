@@ -8,7 +8,11 @@ To use this template, first click the green "Use this template" button at the to
 
 Next, install [TexLive](https://www.tug.org/texlive/). If you are on a Mac, install [MacTex](https://www.tug.org/mactex/).
 
-Finally, clone this repo to your laptop, cd into the repo directory, and type "make" to ensure that everything is installed correctly and that you can create a copy of the template pdf file. For example:
+Finally, clone your new repo to your laptop.
+
+### Building your first PDF (Mac, Linux)
+
+To build the techreport.pdf file on a Mac or Linux box, just type "make". For example:
 
 ```
 [~/github/radgrad/techreport]-> make
@@ -42,6 +46,17 @@ Success!  Wrote 4 pages, 17248 bytes
 rm techreport.paper.make techreport.embed.make
 [~/github/radgrad/techreport]->
 ```
+### Building the techreport.pdf file (Windows)
+
+Since make files don't work by default on Windows, you need to invoke the following LaTeX programs manually:
+
+```
+> pdflatex techreport.tex
+> bibtex techreport
+> pdflatex techreport.tex
+```
+
+The first invocation of pdflatex creates a number of intermediate files providing information about the structure of the document which are then used by a second invocation of pdflatex to generate the table of contents. There is a separate program, bibtex, which is used to generate the bibliography section.  So, in all, you need to run these three commands to generate the document from scratch. (If the bibliography hasn't changed, then you don't have to run bibtex each time.)
 
 ### Developing your tech report
 
